@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="phone.css">
+    <title>Your Page Title</title>
+
+          <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <div class="buttons" id="tab_bar">
+      <button class="buttons" id="DialerButton">Dialer</button>
+      <button class="buttons" id="ContackListButton">Contact List</button>
+      <button class="buttons" id="AddContactButton">Add Contact</button>
+        <div class="pages" id="content">
+          <div class="content_dialer" id="content_dialer">
+
+            <h2>Dialer</h2>
+
+            <button class="w3-button w3-black"id="num" value="1">1</button>
+            <button class="number" value="2"id="num">2</button>
+            <button class="number" value="3"id="num">3</button>
+            <br />
+            <button class="number" value="4"id="num">4</button>
+            <button class="number" value="5"id="num">5</button>
+            <button class="number" value="6"id="num">6</button>
+            <br />
+            <button class="number" value="7"id="num">7</button>
+            <button class="number" value="8"id="num">8</button>
+            <button class="number" value="9"id="num">9</button>
+            <br />
+            <button class="number" value="*"id="num">*</button>
+            <button class="number" value="0"id="num">0</button>
+            <button class="number" value="#"id="num">#</button>
+            <br />
+            <button class="number" value="Dial">Dial</button>
+            <button class="number" value="Clear">Clear</button>
+          </div>
+
+          <div class="content_list" id="content_list">
+            <h2>Contact List</h2>
+            <ul>
+              <li>John</li>
+              <li>Mike</li>
+              <li>Ally</li>
+              <li>Milo</li>
+              <li>Joe</li>
+            </ul>
+          </div>
+          <div class="Add_Contact" id="Add_Contact">
+            <h2>Add Contact</h2>
+            <form action="/action_page.php">
+              <label for="fname">Name</label><br>
+              <input type="text" id="fname" name="fname" value="John Doe"><br>
+              <label for="lname">Phone Numner:</label><br>
+              <input type="text" id="lname" name="lname" value=1234567890><br><br>
+              <input type="submit" value="Submit">
+              <button class="Add_Contact" value="Add">Add Contact</button>
+              <button class="Add_Contact" value="Clear">Clear</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>
